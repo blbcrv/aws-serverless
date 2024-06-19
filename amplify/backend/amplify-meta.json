@@ -1,0 +1,41 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-clemetref-dev-96007-authRole",
+      "UnauthRoleArn": "arn:aws:iam::280785151288:role/amplify-clemetref-dev-96007-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::280785151288:role/amplify-clemetref-dev-96007-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-clemetref-dev-96007-deployment",
+      "UnauthRoleName": "amplify-clemetref-dev-96007-unauthRole",
+      "StackName": "amplify-clemetref-dev-96007",
+      "StackId": "arn:aws:cloudformation:eu-north-1:280785151288:stack/amplify-clemetref-dev-96007/c45a5850-2e19-11ef-aa98-0a5f63687024",
+      "AmplifyAppId": "d3kv338oqndwj9"
+    }
+  },
+  "auth": {
+    "clemetref545ca4a7": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      }
+    }
+  }
+}
